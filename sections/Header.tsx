@@ -21,7 +21,7 @@ const Header = ({ menuLinks, avatar }: Props) => {
   if (device !== "desktop") {
     return (
       <>
-        <div class="flex justify-between items-center relative container bg-base-100 pt-3">
+        <div class="flex justify-between items-center relative px-5 bg-base-100 pt-3">
           <Avatar
             name={avatar.name}
             description={avatar.description}
@@ -45,7 +45,7 @@ const Header = ({ menuLinks, avatar }: Props) => {
   }
 
   return (
-    <div className="w-80 float-left bg-base-100 h-screen flex flex-col px-8 pt-14 pb-12">
+    <div className="w-80 float-left bg-base-100 h-screen flex flex-col px-8 pt-14 pb-12 mr-8">
       <Avatar
         name={avatar.name}
         description={avatar.description}

@@ -28,7 +28,9 @@ export function NavigationItems({ items, class: _class = "" }: Props) {
                   <ul className="pl-6 mt-2 collapse-content">
                     {item.children.map((child, childIndex) => (
                       <li key={childIndex} className="py-1">
-                        <a href="#" className="text-sm lg:text-base">{child}</a>
+                        <a href={child.href} className="text-sm lg:text-base">
+                          {child}
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -36,7 +38,7 @@ export function NavigationItems({ items, class: _class = "" }: Props) {
               )
               : (
                 <a
-                  href="#"
+                  href={item.href}
                   className="flex items-center gap-2 text-sm lg:text-base"
                 >
                   <Label label={item.label} icon={item.icon} />
