@@ -169,7 +169,6 @@ export const toValue = (color: string | ReturnType<typeof darken>) => {
 const toVariables = (
   t: Theme & Required<ThemeColors>,
 ): [string, string][] => {
-
   const colorVariables = Object.entries({
     "--p": t["primary"],
     "--pc": t["primary-content"] ?? contrasted(t["primary"]),

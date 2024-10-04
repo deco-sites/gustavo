@@ -41,6 +41,24 @@
           "href": "/reviews"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Gallery.tsx",
+      "title": {
+        "title": "My Work",
+        "subtitle": "Creations"
+      },
+      "items": [
+        {
+          "backgroundColor": "#015a44",
+          "image": {
+            "main": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/gustavo/84aeabdc-32c4-4fec-9c5e-7290d5b45a68/Captura-de-Tela-2024-10-04-as-19.34.49.png"
+          },
+          "title": "Magento Integration",
+          "description": "at Carcará",
+          "href": "/work/magento"
+        }
+      ]
     }
   ],
   "seo": {

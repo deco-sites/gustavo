@@ -38,21 +38,29 @@
   },
   "mode": "dark",
   "mainColors": {
-    "primary": "#27AE6B",
+    "primary": "#803FE8",
     "base-100": "#ffffff",
-    "secondary": "#FAEABC",
-    "success": "#219259",
-    "warning": "#a39e0f",
-    "error": "#d10a0a",
-    "info": "#3c4cc8",
-    "neutral": "#000000"
+    "secondary": "#907AFF",
+    "success": "#D7FFC7",
+    "warning": "#feffc7",
+    "error": "#E9D7FA",
+    "info": "#BEEBFA",
+    "neutral": "#102D43",
+    "tertiary": "#79E8E2"
   },
   "complementaryColors": {
-    "primary-content": "#ffffff",
-    "base-200": "#FAFAFA",
-    "base-300": "#5C5C5C",
-    "base-400": "#C9CFCF",
+    "primary-content": "#f2f4f3",
+    "base-200": "#F2F4F3",
+    "base-300": "#bdc2bf",
+    "base-400": "#919797",
     "base-500": "#616B6B",
-    "base-content": "#000000"
+    "base-content": "#012731",
+    "secondary-content": "#f2f4f3",
+    "tertiary-content": "#012731",
+    "neutral-content": "#f2f4f3",
+    "success-content": "#012731",
+    "warning-content": "#012731",
+    "error-content": "#012731",
+    "info-content": "#012731"
   }
 }
