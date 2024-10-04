@@ -5,7 +5,12 @@ export default {
   daisyui: { themes: [], logs: false },
   content: ["./**/*.tsx"],
   theme: {
-    container: { center: true },
+    container: {
+      padding: {
+        lg: "2rem",
+        DEFAULT: "1.25rem",
+      },
+    },
     extend: {
       animation: {
         sliding: "sliding 30s linear infinite",

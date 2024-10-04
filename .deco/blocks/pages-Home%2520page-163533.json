@@ -1,0 +1,50 @@
+{
+  "name": "Home page",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Header.tsx",
+      "avatar": {
+        "photo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/gustavo/786f6f43-ed87-47ed-86e4-4661c076e4f8/gustavo.jpg",
+        "name": "Gustavo Martins Vasconcellos",
+        "description": "Web Developer, Professor and Founder at MVP"
+      },
+      "menuLinks": [
+        {
+          "icon": "shopping_bag",
+          "children": [],
+          "label": "My Works",
+          "href": "/works"
+        },
+        {
+          "icon": "shopping_bag",
+          "children": [],
+          "label": "About Me",
+          "href": "/about"
+        },
+        {
+          "icon": "shopping_bag",
+          "children": [],
+          "label": "Experience",
+          "href": "/experience"
+        },
+        {
+          "icon": "shopping_bag",
+          "children": [],
+          "label": "Articles",
+          "href": "/articles"
+        },
+        {
+          "icon": "shopping_bag",
+          "children": [],
+          "label": "Reviews",
+          "href": "/reviews"
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

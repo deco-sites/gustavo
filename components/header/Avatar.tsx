@@ -1,4 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   photo: ImageWidget;
@@ -12,14 +13,20 @@ export function Avatar({
   description,
 }: Props) {
   return (
-    <div className="p-4">
-      <img
+    <div className="flex gap-2 items-center flex-start">
+      <Image
         src={photo}
         alt={name}
-        className="w-20 h-20 rounded-full mx-auto mb-2"
+        width={50}
+        height={50}
+        className="w-10 h-10 lg:w-12 lg:h-12 rounded-full"
       />
-      <h2 className="text-xl font-bold text-center">{name}</h2>
-      <p className="text-sm text-gray-600 text-center">{description}</p>
+      <div>
+        <h2 className="text-sm font-medium">{name}</h2>
+        <p className="text-xs text-gray-600">
+          {description}
+        </p>
+      </div>
     </div>
   );
 }
