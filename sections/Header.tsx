@@ -34,7 +34,10 @@ const Header = ({ menuLinks, avatar }: Props) => {
         <div class="collapse rounded-none mt-4 items-start">
           <input type="checkbox" id="mobile-menu" class="min-h-0" />
           <div className="collapse-content bg-base-100 px-0">
-            <NavigationItems class="border-b border-neutral px-5 pb-5" items={menuLinks} />
+            <NavigationItems
+              class="border-b border-neutral px-5 pb-5"
+              items={menuLinks}
+            />
           </div>
         </div>
       </>
