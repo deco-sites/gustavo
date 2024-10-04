@@ -148,6 +148,8 @@ type Theme =
 
 const darken = (color: string, percentage: number) =>
   new Color(color).darken(percentage);
+export const lighten = (color: string, percentage: number) =>
+  new Color(color).lighten(percentage);
 
 const isDark = (c: Color) =>
   c.contrast("black", "WCAG21") < c.contrast("white", "WCAG21");
@@ -158,14 +160,15 @@ const contrasted = (color: string, percentage = 0.8) => {
   return isDark(c) ? c.mix("white", percentage) : c.mix("black", percentage);
 };
 
+export const toValue = (color: string | ReturnType<typeof darken>) => {
+  const [l, c, h] = new Color(color).oklch;
+
+  return `${(l * 100).toFixed(0)}% ${c.toFixed(2)} ${(h || 0).toFixed(0)}deg`;
+};
+
 const toVariables = (
   t: Theme & Required<ThemeColors>,
 ): [string, string][] => {
-  const toValue = (color: string | ReturnType<typeof darken>) => {
-    const [l, c, h] = new Color(color).oklch;
-
-    return `${(l * 100).toFixed(0)}% ${c.toFixed(2)} ${(h || 0).toFixed(0)}deg`;
-  };
 
   const colorVariables = Object.entries({
     "--p": t["primary"],
